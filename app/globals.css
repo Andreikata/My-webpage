@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 60px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+nav {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 100px;
+}
+navbar-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+navbar-list li {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+navbar-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
+navbar-list a:hover {
+  color: #f0f0f0;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+footer {
+  background-color: #111;
+  border-radius: 50px;
+  margin-top: 200px;
+}
+.footerContainer {
+  width: 100%;
+  padding: 50px 450px 10px;
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+.socialIcons #linke {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons #oink {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons #angel {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons #boro {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons #linke i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+.socialIcons #oink i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+.socialIcons #angel i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+.socialIcons #boro i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+.socialIcons #linke:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons #oink:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons #angel:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons #boro:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons #linke:hover i {
+  color: white;
+  transition: 0.5s;
+}
+.socialIcons #oink:hover i {
+  color: white;
+  transition: 0.5s;
+}
+.socialIcons #angel:hover i {
+  color: white;
+  transition: 0.5s;
+}
+.socialIcons #boro:hover i {
+  color: white;
+  transition: 0.5s;
+}
+.footerNav {
+  margin: 20px 0;
+}
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+}
+.footerNav ul li #angel {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li #angel:hover {
+  opacity: 1;
+}
+.footerBottom {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p {
+  color: white;
+}
+img {
+  margin-bottom: 150px;
+  padding: 20px 20px;
+  width: 100%;
+}
+.pagination {
+  margin-bottom: 250px;
+}
